@@ -1,0 +1,7 @@
+全局变量在所有模块中均可使用。 但以下变量的作用域只在模块内
+    __dirname
+    __filename
+    exports
+    module
+    require()
+所谓变量的作用域在模块内 就是只能在JS文件中  不能在repl (交互式解释器)等使用
