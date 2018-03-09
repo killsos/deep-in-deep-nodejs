@@ -5,3 +5,10 @@
     module
     require()
 所谓变量的作用域在模块内 就是只能在JS文件中  不能在repl (交互式解释器)等使用
+
+Buffer
+用于处理二进制数据
+
+__dirname
+<string> 当前模块的绝对路径 + 文件夹名称,
+等同于 __filename 的 path.dirname() 的值。
