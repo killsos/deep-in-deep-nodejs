@@ -6,5 +6,3 @@ console.log(buf4);
 const buf5 = Buffer.from('test');
 console.log(buf5);
 
-
-const buf6 = Buffer.from('test', 'ql');
