@@ -1,0 +1,18 @@
+Node.js 支持几种当应用程序运行时发生的错误的冒泡和处理的机制
+如何报告和处理这些错误完全取决于错误的类型和被调用的 API 的风格
+
+所有 JavaScript 错误都会被作为异常处理
+异常会立即产生并使用标准的 JavaScript throw 机制抛出一个错误
+这些都是使用 JavaScript 语言提供的 try / catch 语句处理的
+
+
+// 抛出一个 ReferenceError，因为 z 为 undefined
+try {
+  const m = 1;
+  const n = m + z;
+} catch (err) {
+  // 在这里处理错误。
+}
+
+JavaScript 的 throw 机制的任何使用都会引起异常
+异常必须使用 try / catch 处理，否则 Node.js 进程会立即退出
