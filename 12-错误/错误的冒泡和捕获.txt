@@ -16,3 +16,7 @@ try {
 
 JavaScript 的 throw 机制的任何使用都会引起异常
 异常必须使用 try / catch 处理，否则 Node.js 进程会立即退出
+
+除了少数例外，同步的 API（任何不接受 callback 函数的阻塞方法
+例如 fs.readFileSync）会使用 throw 报告错误。
+
